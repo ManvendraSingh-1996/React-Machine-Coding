@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.toast {
+    animation: slideToast 0.6s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    /* background-color: #323232;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px; */
+    z-index: 1000;
+}
+
+.success {
+    background: green;
+}
+
+.warning {
+    background: orange;
+}
+
+.failed {
+    background: red;
+}
+
+.delete {
+    background: blue;
+}
+
+.star {
+    color: goldenrod;
+}
+
+@keyframes slideToast {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}
