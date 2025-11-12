@@ -20,6 +20,7 @@ const InfiniteScroll = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (
+        // scroll height calculation we are doing +1 to avoid precision issues
         window.innerHeight + document.documentElement.scrollTop + 1 >=
         document.documentElement.scrollHeight
       ) {
