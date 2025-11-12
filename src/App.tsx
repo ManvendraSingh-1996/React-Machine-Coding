@@ -4,6 +4,8 @@ import { StarRating } from "./features/pages/StarRating";
 import ToastContainer from "./features/pages/ToastContainer";
 import { UserContext } from "./context/UserContext";
 import Parent from "./features/Hooks/Parent";
+import StepForm from "./features/pages/StepForm";
+import VirtualizedList from "./features/pages/VirtualizedList";
 
 function App() {
   const user = "Manvendra Singh";
@@ -13,7 +15,9 @@ function App() {
       {/* <StarRating /> */}
       {/* <InfiniteScroll /> */}
       {/* <Task /> */}
-      <Parent />
+      {/* <StepForm /> */}
+      {/* <Parent /> */}
+      <VirtualizedList />
     </UserContext.Provider>
   );
 }

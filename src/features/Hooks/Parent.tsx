@@ -19,7 +19,7 @@ const Parent: React.FC = () => {
       >
         Increase Child Count
       </button>
-      <Child data={(parentCount, handleChildCount)} />
+      <Child data={[parentCount, handleChildCount]} />
     </div>
   );
 };
