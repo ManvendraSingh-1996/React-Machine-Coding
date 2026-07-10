@@ -1,9 +1,11 @@
 import "./App.css";
-import InfiniteScroll from "./features/pages/InfiniteScroll";
-import { StarRating } from "./features/pages/StarRating";
-import ToastContainer from "./features/pages/ToastContainer";
+// import InfiniteScroll from "./features/pages/InfiniteScroll";
+// import { StarRating } from "./features/pages/StarRating";
+// import ToastContainer from "./features/pages/ToastContainer";
+// import { Task } from "./features/pages/Task.jsx";
 import { UserContext } from "./context/UserContext";
-import Parent from "./features/Hooks/Parent";
+import Todo from "./features/pages/Todo";
+// import { Accordion } from "./components/Accordion";
 
 function App() {
   const user = "Manvendra Singh";
@@ -13,7 +15,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <InfiniteScroll /> */}
       {/* <Task /> */}
-      <Parent />
+      {/* <Accordion /> */}
+      <Todo />
     </UserContext.Provider>
   );
 }
