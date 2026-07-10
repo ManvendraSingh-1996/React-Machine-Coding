@@ -4,8 +4,7 @@ import "./App.css";
 // import ToastContainer from "./features/pages/ToastContainer";
 // import { Task } from "./features/pages/Task.jsx";
 import { UserContext } from "./context/UserContext";
-import Todo from "./features/pages/Todo";
-// import { Accordion } from "./components/Accordion";
+import Parent from "./features/Hooks/Parent";
 
 function App() {
   const user = "Manvendra Singh";
@@ -15,8 +14,7 @@ function App() {
       {/* <StarRating /> */}
       {/* <InfiniteScroll /> */}
       {/* <Task /> */}
-      {/* <Accordion /> */}
-      <Todo />
+      <Parent />
     </UserContext.Provider>
   );
 }
