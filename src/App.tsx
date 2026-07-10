@@ -4,7 +4,7 @@ import "./App.css";
 // import ToastContainer from "./features/pages/ToastContainer";
 // import { Task } from "./features/pages/Task.jsx";
 import { UserContext } from "./context/UserContext";
-import Parent from "./features/Hooks/Parent";
+import Parent from "./features/pages/Parent";
 
 function App() {
   const user = "Manvendra Singh";
