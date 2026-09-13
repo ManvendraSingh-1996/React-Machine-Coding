@@ -21,13 +21,14 @@ export const Accordion = () => {
       answer: "It is a React Hook used for state management.",
     },
   ];
-
+  // this function is used to toggle the open state of an item in the accordion. If the item is already open, it will be closed, and if it is closed, it will be opened. The open state is managed using a single index of the open item.and it allows only one item to be open at a time.
   const handleClick = (index: number) => {
     setActiveIndex(index);
     if (activeIndex === index) {
       setActiveIndex(null);
     }
   };
+  // this function is used to toggle the open state of an item in the accordion. If the item is already open, it will be closed, and if it is closed, it will be opened. The open state is managed using an array of indices of the open items. and it allows multiple items to be open at the same time.
   const handleClick2 = (index: number) => {
     if (openItems.includes(index)) {
       setOpenItems(openItems.filter((i) => i !== index));

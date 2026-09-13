@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:/Manvendra Singh/Projects/New folder/IYKYK/Practice/Machine Coding Practice\" && ls -a .cursor .cursorrules .github .claude CLAUDE.md .codex .gemini GEMINI.md 2>/dev/null; echo \"---home---\"; ls -a ~/.codex/config.toml ~/.gemini/settings.json ~/GEMINI.md 2>/dev/null; echo \"done\")",
+      "Read(//c/Users/manve/.codex/**)"
+    ]
+  }
+}
