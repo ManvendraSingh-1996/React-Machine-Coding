@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-export const Todo = () => {
-  const task = {
-    id: 0,
-    title: "",
-    completed: false,
-    priority: "",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  };
+type Task = {
+  id: number;
+  title: string;
+  completed: boolean;
+  priority: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
 
+export const Todo = () => {
   const priority = {
     High: "High",
     Medium: "Medium",
@@ -17,10 +17,10 @@ export const Todo = () => {
   };
   //   let editingTask = null;
   let selectedPriority = priority.Medium;
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<Task[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
-  const [editingTask, setEditingTask] = useState(null);
+  const [editingTask, setEditingTask] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState("");
 
   const handleInputChange = (e) => {
@@ -31,7 +31,7 @@ export const Todo = () => {
       setInputValue("");
     }
   };
-  const handlePriorityChange = (e) => {
+  const handlePriorityChange = (e: { target: { value: string } }) => {
     selectedPriority = e.target.value;
   };
   const handleSaveTask = () => {
@@ -168,7 +168,7 @@ export const Todo = () => {
                   {editingTask && task.id === editingTask ? (
                     <button
                       onClick={() => {
-                        setEditingTask("");
+                        setEditingTask(null);
                         setInputValue("");
                       }}
                     >

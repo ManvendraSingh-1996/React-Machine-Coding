@@ -4,6 +4,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  text-align: center;
 }
 
 * {
@@ -17,71 +18,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.host-shell {
-  display: grid;
-  gap: 24px;
-}
-
-.host-panel {
-  width: min(100%, 700px);
-  margin: 0 auto;
-  padding: 22px;
-  border: 1px solid #d9e0ea;
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, .1);
-}
-
-.host-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 18px;
-}
-
-.host-kicker {
-  display: block;
-  margin-bottom: 6px;
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: uppercase;
-}
-
-.host-header h1 {
-  margin: 0;
-  color: #172033;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.host-port {
-  flex: 0 0 auto;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: #eff6ff;
-  color: #1d4ed8;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.remote-loading {
-  padding: 18px;
-  border: 1px dashed #9ca3af;
-  border-radius: 8px;
-  color: #4b5563;
-  background: #f9fafb;
-}
-
 .app {
   display: flex;
   justify-content: center;
+  padding: 40px;
 }
 
 .todo-container {
-  width: min(100%, 700px);
+  width: 700px;
   background: white;
   border-radius: 12px;
   padding: 30px;
@@ -247,26 +191,6 @@ body {
   font-size: 14px;
   margin: 5px;
 
-}
-
-@media (max-width: 720px) {
-  #root {
-    padding: 1rem;
-  }
-
-  .host-header,
-  .todo-form,
-  .summary {
-    flex-direction: column;
-  }
-
-  .host-port {
-    align-self: flex-start;
-  }
-
-  .todo-container {
-    padding: 20px;
-  }
 }
 
 /* 
