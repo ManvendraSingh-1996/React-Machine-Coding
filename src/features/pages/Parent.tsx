@@ -11,7 +11,8 @@ const Parent: React.FC = () => {
     <div>
       <div className="">This is Parent Component</div>
       <div>
-        This count is handled in Child Component : <span className="">{}</span>
+        This count is handled in Child Component :{" "}
+        <span className="">{childCount}</span>
       </div>
       <button
         className="bg-blue-400 shadow-2xs border py-1 px-2 rounded-sm"
@@ -19,6 +20,7 @@ const Parent: React.FC = () => {
       >
         Increase Child Count
       </button>
+
       <Child data={[parentCount, handleChildCount]} />
     </div>
   );
